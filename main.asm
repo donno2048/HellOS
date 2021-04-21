@@ -5,7 +5,7 @@ mov si, hello
 mov ah, 0eh
 .loop:
 	lodsb
-	or al, al
+	test al, al
 	jz halt
 	int 10h
 	jmp .loop
