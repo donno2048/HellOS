@@ -1,5 +1,3 @@
-org 7c00h
-cli
 mov si, 7c00h
 mov ah, 0eh
 loop: lodsb
