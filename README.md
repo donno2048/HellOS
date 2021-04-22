@@ -6,7 +6,7 @@ An entire operating system (actually a boot sector) just to display: "Hello!" (O
 
 ```sh
 sudo apt update -y
-sudo apt install qemu-system-x86 nasm -y
+sudo apt install qemu-system-x86 nasm -y # qemu is needed only for running the OS locally (as in the **Run the OS** section)
 ```
 
 ## Compile the OS
