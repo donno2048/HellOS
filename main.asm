@@ -10,5 +10,3 @@ mov ah, 0eh
 	int 10h
 	jmp .loop
 halt hlt
-times (200h + $$ - 2 - $) db 0
-dw 0xaa55
