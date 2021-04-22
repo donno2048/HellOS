@@ -1,6 +1,6 @@
 # HellOS
 
-An entire operating system (actually a boot sector) just to display: "Hello!"
+An entire operating system (actually a boot sector) just to display: "Hello!" (Or anything else)
 
 ## Install dependencies
 
@@ -12,9 +12,7 @@ sudo apt install qemu-system-x86 nasm -y
 ## Compile the OS
 
 ```sh
-nasm -o hello.bin main.asm
-n=$(stat -c%s hello.bin);while [ $n -lt 510 ];do n=$((n+1));echo -ne '\0';done >> hello.bin
-printf '\125\252' >> hello.bin
+bash main.sh Hello! # Or use any other word, for some reason some will work and some won't
 ```
 
 ## Run the OS
