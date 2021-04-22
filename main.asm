@@ -1,7 +1,6 @@
 org 7c00h
-hello db 0
 cli
-mov si, hello
+mov si, 7c00h
 mov ah, 0eh
 loop:
 	lodsb
