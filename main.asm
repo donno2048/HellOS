@@ -3,10 +3,8 @@ hello db 0
 cli
 mov si, hello
 mov ah, 0eh
-.loop:
+loop:
 	lodsb
-	test al, al
-	jz halt
 	int 10h
-	jmp .loop
-halt hlt
+	cmp al, 0
+	jne loop
