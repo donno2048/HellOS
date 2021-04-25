@@ -1,0 +1,2 @@
+nasm -f elf32 bootsector.asm -o bootsector.o
+g++ -m32 main.cpp bootsector.o -o os.bin -nostdlib -ffreestanding -std=c++11 -mno-red-zone -fno-exceptions -fno-pie -nostdlib -fno-rtti -Wall -Wextra -Werror -T linker.ld
