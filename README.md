@@ -4,6 +4,13 @@ An entire operating system (actually a boot sector) just to display: "Hello!" (O
 
 Inside the _Full_ folder there are the files needed to create an entire operating system (not only a boot sector) with cpp
 
+## Clone the repo
+
+```sh
+git clone https://github.com/donno2048/HellOS
+cd HellOS
+```
+
 ## Install dependencies
 
 ```sh
